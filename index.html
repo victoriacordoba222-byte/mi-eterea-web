@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etérea | Joyería de Plata</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --esmeralda: #04291D; --azul-francia: #003399; --blanco: #FFFFFF; --dorado-suave: #D4AF37; }
+        body { background-color: var(--esmeralda); color: var(--blanco); font-family: 'Cormorant Garamond', serif; margin: 0; scroll-behavior: smooth; overflow-x: hidden; }
+        
+        nav { padding: 20px; text-align: center; background: rgba(4, 41, 29, 0.95); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        nav a { color: white; text-decoration: none; margin: 0 15px; text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; font-family: 'Montserrat', sans-serif; }
+        
+        header { height: 70vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; background: linear-gradient(rgba(4, 41, 29, 0.7), rgba(4, 41, 29, 0.7)); }
+        h1 { font-size: clamp(3rem, 10vw, 5rem); letter-spacing: 15px; margin: 0; font-weight: 200; text-transform: uppercase; }
+        .linea-acento { width: 50px; height: 1px; background-color: var(--azul-francia); margin: 25px 0; }
+        
+        .seccion { padding: 80px 20px; max-width: 1000px; margin: auto; text-align: center; }
+        
+        /* SECCIÓN ESENCIA ACTUALIZADA */
+        .esencia-box { border: 1px solid rgba(255,255,255,0.2); padding: 40px; background: rgba(255,255,255,0.03); border-radius: 2px; }
+        .esencia-box h2 { font-family: 'Montserrat', sans-serif; font-weight: 200; letter-spacing: 4px; margin-bottom: 30px; }
+        .esencia-texto { font-size: 1.4rem; font-style: italic; line-height: 1.6; color: #f0f0f0; }
+
+        .grid-catalogo { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 50px; }
+        .producto { padding: 15px; transition: 0.5s; border: 1px solid transparent; }
+        .producto:hover { border-color: rgba(255,255,255,0.2); background: rgba(255,255,255,0.02); }
+        
+        .img-joya { width: 100%; height: 400px; object-fit: cover; filter: brightness(0.9); transition: 0.5s; }
+        .producto:hover .img-joya { filter: brightness(1.1); transform: scale(1.02); }
+        
+        h3 { font-family: 'Montserrat', sans-serif; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; font-size: 1rem; margin-top: 20px; }
+        .metal { font-size: 0.8rem; letter-spacing: 2px; color: var(--dorado-suave); text-transform: uppercase; margin-bottom: 20px; }
+        
+        .btn-compra { display: inline-block; padding: 12px 35px; border: 1px solid var(--azul-francia); color: white; text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.7rem; letter-spacing: 2px; transition: 0.3s; }
+        .btn-compra:hover { background: var(--azul-francia); box-shadow: 0 0 15px rgba(0, 51, 153, 0.4); }
+        
+        .btn-whatsapp { position: fixed; bottom: 30px; right: 30px; background-color: #25d366; color: white; width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 25px; text-decoration: none; z-index: 1000; box-shadow: 0 4px 20px rgba(0,0,0,0.4); }
+        
+        footer { padding: 40px; text-align: center; font-size: 0.7rem; letter-spacing: 2px; opacity: 0.6; font-family: 'Montserrat', sans-serif; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#esencia">Esencia</a>
+        <a href="#coleccion">Colección</a>
+    </nav>
+
+    <header id="inicio">
+        <h1>ETÉREA</h1>
+        <div class="linea-acento"></div>
+        <p style="font-family: 'Montserrat', sans-serif; font-weight: 200; letter-spacing: 5px; font-size: 0.7rem;">JOYERÍA DE PLATA CON ALMA</p>
+    </header>
+
+    <section id="esencia" class="seccion">
+        <div class="esencia-box">
+            <h2>Nuestra Esencia</h2>
+            <p class="esencia-texto">"Etérea evoca aquello que es extremadamente delicado, ligero y fuera de este mundo."</p>
+            <p style="margin-top: 20px; font-family: 'Montserrat', sans-serif; font-weight: 200; opacity: 0.8;">Cada una de nuestras piezas de Plata 925 busca capturar la sutileza de lo intangible, creando elegancia que trasciende lo terrenal.</p>
+        </div>
+    </section>
+
+    <section id="coleccion" class="seccion">
+        <h2 style="font-family: 'Montserrat', sans-serif; font-weight: 200; letter-spacing: 6px; text-transform: uppercase;">Colección Primera</h2>
+        <div class="grid-catalogo">
+            <div class="producto">
+                <img src="anillo.jpg" alt="Anillo" class="img-joya">
+                <h3>Anillo con cristal engarzado</h3>
+                <p class="metal">Plata 925</p>
+                <a href="https://wa.me/2615739130?text=Hola! Me interesa el Anillo con cristal engarzado" class="btn-compra" target="_blank">CONSULTAR</a>
+            </div>
+            <div class="producto">
+                <img src="collar.jpg" alt="Gargantilla" class="img-joya">
+                <h3>Gargantilla Pandora</h3>
+                <p class="metal">Plata 925</p>
+                <a href="https://wa.me/2615739130?text=Hola! Me interesa la Gargantilla Pandora" class="btn-compra" target="_blank">CONSULTAR</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 ETÉREA JOYERÍA - MENDOZA, ARGENTINA</p>
+    </footer >
+
+    <a href="https://wa.me/TU_NUMERO_AQUI" class="btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+</body>
+</html>
